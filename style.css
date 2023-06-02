@@ -1,15 +1,15 @@
+@charset "UTF-8";
 /* 'fabrands' 400
     'falight' 300
     'faregular' 400
     'fasolid' 900 */
 @font-face {
-  font-family: "fabrands";
-  src: url(font/fa-brands-400.woff2);
-  font-weight: 400, format("woff2");
+  font-family: "brands";
+  src: url("font/fa-brands-400.woff2") format("woff2");
 }
 @font-face {
   font-family: "falight";
-  src: url(font/fa-light-300.woff2);
+  src: url(./font/fa-light-300.woff2);
   font-weight: 300, format("woff2");
 }
 @font-face {
@@ -22,6 +22,10 @@
   src: url(font/fa-solid-900.woff2);
   font-weight: 900, format("woff2");
 }
+/* media du header => 
+- passe en menu burger à max 1400px
+Pour le responsive : 
+max 950px, 600px, 350px */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -54,44 +58,69 @@ header .nav_links2 {
 }
 header .topnav {
   width: 100%;
-  justify-content: space-between;
+  justify-content: end;
   padding: 40px 80px;
 }
+header .topnav .Kababi_logo {
+  position: absolute;
+  left: 60px;
+  top: 40px;
+}
 header .topnav .topnav_menu {
-  width: 70%;
+  width: 80%;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
 }
 header .topnav .topnav_menu .nav_links,
 header .topnav .topnav_menu .nav_links2 {
   gap: 60px;
 }
-header .topnav .topnav_menu .nav_links .btn_nav,
-header .topnav .topnav_menu .nav_links2 .btn_nav {
-  background-color: #C8A96A;
-  padding: 20px 28px;
-  border-radius: 5px;
+header .topnav .topnav_menu .nav_links .home,
+header .topnav .topnav_menu .nav_links2 .home {
+  color: #C8A96A;
 }
 header .topnav .topnav_menu .nav_links li a,
 header .topnav .topnav_menu .nav_links2 li a {
   color: white;
 }
+header .topnav .topnav_menu .nav_links li a i,
+header .topnav .topnav_menu .nav_links2 li a i {
+  margin: 0 10px;
+}
+header .topnav .topnav_menu .nav_links li img,
+header .topnav .topnav_menu .nav_links2 li img {
+  margin-right: 10px;
+}
+header .topnav .topnav_menu .nav_links li .btn_nav,
+header .topnav .topnav_menu .nav_links2 li .btn_nav {
+  background-color: #C8A96A;
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-family: "brands";
+  font-weight: 400;
+}
 header .topnav .icon_hamburger {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 100;
   display: none;
 }
 header .contenu_header {
   width: 100%;
-  margin: 5% 0 0 10%;
+  margin: 5% 10%;
 }
-header .contenu_header .img_header {
+header .contenu_header .imgAndtitle {
   position: relative;
+  width: 30%;
 }
-header .contenu_header .img_header img {
+header .contenu_header .imgAndtitle img {
   position: absolute;
-  left: 20%;
-  top: -40px;
+  top: -50px;
+  right: 0;
 }
-header .contenu_header h1 {
+header .contenu_header .imgAndtitle h1 {
   color: white;
   font-size: 7rem;
   width: 300px;
@@ -106,4 +135,76 @@ header .contenu_header a {
   padding: 15px 30px;
   border: solid 2px rgba(255, 255, 255, 0.185);
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 1400px) {
+  header .topnav .icon_hamburger {
+    display: block;
+  }
+  header .topnav .topnav_menu,
+  header .topnav .nav_links,
+  header .topnav .nav_links2 {
+    flex-direction: column;
+  }
+  header .topnav .nav_links {
+    margin-bottom: 50px;
+  }
+  header .topnav .topnav_menu {
+    height: 100vh;
+    padding: 10%;
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: 0% 0%;
+    transform: translate(200%, 0%);
+    transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  header .topnav .topnav_menu.active {
+    transform: none;
+    position: fixed;
+    transition: transform 0.5 ease;
+    width: 100%;
+  }
+  header .contenu_header .imgAndtitle {
+    width: 40%;
+  }
+  header .contenu_header .imgAndtitle h1 {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  header .contenu_header .imgAndtitle {
+    width: 60%;
+  }
+  header .contenu_header .imgAndtitle h1 {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .contenu_header .imgAndtitle {
+    width: 90%;
+  }
+  header .contenu_header .imgAndtitle img {
+    width: 120px;
+  }
+  header .contenu_header .imgAndtitle h1 {
+    font-size: 4rem;
+    margin-top: 100px;
+    line-height: 100px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  header .contenu_header .imgAndtitle img {
+    width: 100px;
+  }
+  header .contenu_header .imgAndtitle h1 {
+    font-size: 3.5rem;
+    margin-top: 100px;
+    line-height: 100px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "brands";
+  src: url("font/fa-brands-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "falight";
+  src: url(./font/fa-light-300.woff2);
+  font-weight: 300, format("woff2");
+}
+@font-face {
+  font-family: "faregular";
+  src: url(font/fa-regular-400.woff2);
+  font-weight: 400, format("woff2");
+}
+@font-face {
+  font-family: "fasolid";
+  src: url(font/fa-solid-900.woff2);
+  font-weight: 900, format("woff2");
+}/*# sourceMappingURL=font.css.map */
