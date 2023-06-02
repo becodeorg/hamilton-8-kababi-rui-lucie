@@ -44,7 +44,7 @@ header {
   background: cover;
   background-repeat: no-repeat;
 }
-header .container {
+header .container_header {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   height: 100%;
   width: 100%;
