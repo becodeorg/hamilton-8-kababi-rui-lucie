@@ -43,7 +43,7 @@ header .topnav .topnav_menu .nav_links2 {
 }
 header .topnav .topnav_menu .nav_links .home,
 header .topnav .topnav_menu .nav_links2 .home {
-  color: #C8A96A;
+  color: #c8a96a;
 }
 header .topnav .topnav_menu .nav_links li a,
 header .topnav .topnav_menu .nav_links2 li a {
@@ -59,7 +59,7 @@ header .topnav .topnav_menu .nav_links2 li img {
 }
 header .topnav .topnav_menu .nav_links li .btn_nav,
 header .topnav .topnav_menu .nav_links2 li .btn_nav {
-  background-color: #C8A96A;
+  background-color: #c8a96a;
   padding: 20px 30px;
   border-radius: 5px;
   font-family: "brands";
@@ -308,6 +308,65 @@ footer {
 }
 .latest-news {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-container {
+  padding: 3rem;
+  border: 1px solid black;
+  width: 80%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.news {
+  background-color: #f1ece4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22rem;
+  gap: 1rem;
+}
+.news img {
+  height: 15rem;
+  width: 100%;
+}
+.news button {
+  font-weight: bold;
+  font-size: 0.8rem;
+  width: 50%;
+  padding: 1rem;
+  border: none;
+}
+.news button:hover {
+  cursor: pointer;
+  background-color: #c8a96a;
+  color: #ffffff;
+}
+
+.news-text {
+  padding: 2rem 0rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.date-user {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.7rem;
+}
+.date-user i {
+  color: #c8a96a;
+}
+.date-user p {
+  font-size: 0.9rem;
 }
 
 * {

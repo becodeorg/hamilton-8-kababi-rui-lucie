@@ -1,3 +1,61 @@
 .latest-news {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-container {
+  padding: 3rem;
+  border: 1px solid black;
+  width: 80%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.news {
+  background-color: $creme;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22rem;
+  gap: 1rem;
+  img {
+    height: 15rem;
+    width: 100%;
+  }
+  button {
+    font-weight: bold;
+    font-size: 0.8rem;
+    width: 50%;
+    padding: 1rem;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      background-color: $or;
+      color: $white;
+    }
+  }
+}
+
+.news-text {
+  padding: 2rem 0rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.date-user {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.7rem;
+  i {
+    color: $or;
+  }
+  p {
+    font-size: 0.9rem;
+  }
 }
