@@ -1,7 +1,7 @@
 /* 'fabrands' 400
     'falight' 300
     'faregular' 400
-    'fa-solid' 900 */
+    'fasolid' 900 */
 @font-face {
   font-family: "fabrands";
   src: url(font/fa-brands-400.woff2);
@@ -18,7 +18,7 @@
   font-weight: 400, format("woff2");
 }
 @font-face {
-  font-family: "fa-solid";
+  font-family: "fasolid";
   src: url(font/fa-solid-900.woff2);
   font-weight: 900, format("woff2");
 }
@@ -36,9 +36,6 @@ body {
 
 header {
   height: 100vh;
-}
-
-header {
   background-image: url(img/slider/img_bg_slider_home01.jpg);
   background: cover;
   background-repeat: no-repeat;
@@ -81,4 +78,32 @@ header .topnav .topnav_menu .nav_links2 li a {
 }
 header .topnav .icon_hamburger {
   display: none;
+}
+header .contenu_header {
+  width: 100%;
+  margin: 5% 0 0 10%;
+}
+header .contenu_header .img_header {
+  position: relative;
+}
+header .contenu_header .img_header img {
+  position: absolute;
+  left: 20%;
+  top: -40px;
+}
+header .contenu_header h1 {
+  color: white;
+  font-size: 7rem;
+  width: 300px;
+  line-height: 150px;
+  letter-spacing: -7px;
+  font-family: fabrands;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+header .contenu_header a {
+  color: white;
+  padding: 15px 30px;
+  border: solid 2px rgba(255, 255, 255, 0.185);
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 /* 'fabrands' 400
     'falight' 300
     'faregular' 400
-    'fa-solid' 900 */
+    'fasolid' 900 */
 @import "font.scss";
 @import "variable.scss";
 
@@ -17,9 +17,7 @@ body{
 }
 
 header{
-    height:100vh;
-}
-header{
+    height: 100vh;
     background-image: url(img/slider/img_bg_slider_home01.jpg);
     background: cover;
     background-repeat: no-repeat;
@@ -60,6 +58,34 @@ header{
         }
         .icon_hamburger{
             display: none;
+        }
+    }
+    .contenu_header{
+        width: 100%;
+        margin: 5% 0 0 10%;
+        .img_header{
+            position: relative;
+            img{
+                position: absolute;
+                left: 20%;
+                top: -40px;
+            }
+        }
+        h1{
+            color: white;
+            font-size: 7rem;
+            width: 300px;
+            line-height: 150px;
+            letter-spacing: -7px;
+            font-family: fabrands;
+            font-weight: 400;
+            margin-bottom: 50px;
+        }
+        a{
+            color: white;
+            padding: 15px 30px;
+            border: solid 2px rgba(255, 255, 255, 0.185);
+            border-radius: 5px;
         }
     }
 }
