@@ -1,0 +1,65 @@
+/* 'fabrands' 400
+    'falight' 300
+    'faregular' 400
+    'fa-solid' 900 */
+@import "font.scss";
+@import "variable.scss";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    width: 100%;
+}
+
+header{
+    height:100vh;
+}
+header{
+    background-image: url(img/slider/img_bg_slider_home01.jpg);
+    background: cover;
+    background-repeat: no-repeat;
+    .container{
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.500) ,rgba(0, 0, 0, 0)),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0));
+
+        height: 100%;
+        width: 100%;
+    }
+    .topnav,
+    .topnav_menu,
+    .nav_links,
+    .nav_links2{
+        display: flex;
+        align-items: center;
+    }
+    .topnav{
+        width: 100%;
+        justify-content: space-between;
+        padding: 40px 80px;
+        .topnav_menu{
+            width: 70%;
+            justify-content: space-between;
+            align-items: center;
+            .nav_links,
+            .nav_links2{
+                gap: 60px;
+                .btn_nav{
+                    background-color: bisque;
+                    padding: 20px 28px;
+                    border-radius: 5px;
+                }
+                li a{
+                    color: white;
+                }
+            }
+        }
+        .icon_hamburger{
+            display: none;
+        }
+    }
+}
