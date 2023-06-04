@@ -312,15 +312,15 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 4rem;
 }
 
 .news-container {
-  padding: 3rem;
-  border: 1px solid black;
   width: 80%;
   display: flex;
   gap: 2rem;
-  justify-content: center;
+  padding: 3rem 0rem;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -337,6 +337,7 @@ footer {
   width: 100%;
 }
 .news button {
+  background-color: #ffffff;
   font-weight: bold;
   font-size: 0.8rem;
   width: 50%;
@@ -367,6 +368,12 @@ footer {
 }
 .date-user p {
   font-size: 0.9rem;
+}
+
+.news-photos {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
 }
 
 * {
