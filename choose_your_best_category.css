@@ -1,0 +1,83 @@
+.choose_your_best_category {
+  width: 100%;
+  background-image: url(img/banner/imgbgcategory.jpg);
+  background-color: rgba(250, 246, 240, 0.6980392157);
+  background-size: 100% 100%;
+  background-position: center left;
+  text-align: center;
+  position: relative;
+  min-height: 80vh;
+  z-index: -2;
+}
+.choose_your_best_category .title_choose_your_category {
+  z-index: 1;
+}
+.choose_your_best_category .title_choose_your_category h2 {
+  padding-top: 150px;
+  font-size: 3.5rem;
+  font-weight: 100;
+  letter-spacing: -2px;
+}
+.choose_your_best_category .title_choose_your_category p {
+  padding-top: 20px;
+}
+.choose_your_best_category .category_absolute {
+  position: absolute;
+  left: 10px;
+  top: 80px;
+  font-size: 13rem;
+  letter-spacing: -5px;
+  color: #F5EEE3;
+  z-index: -1;
+}
+.choose_your_best_category .cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 150px 0;
+  gap: 30px;
+}
+.choose_your_best_category .cards .card {
+  width: 170px;
+  height: 200px;
+  background-color: #FFFFFF;
+  color: black;
+}
+.choose_your_best_category .cards .card:hover {
+  background-color: #C8A96A;
+  color: #FFFFFF;
+}
+.choose_your_best_category .cards .card:hover .icon_choose_category {
+  color: #FFFFFF;
+}
+.choose_your_best_category .cards .card i {
+  padding-top: 20px;
+}
+.choose_your_best_category .cards .card .icon_choose_category {
+  font-size: 3rem;
+  padding: 30px 30px;
+  color: #C8A96A;
+}
+
+@media only screen and (max-width: 1200px) {
+  .choose_your_best_category .category_absolute {
+    font-size: 10rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .choose_your_best_category .category_absolute {
+    font-size: 7rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .choose_your_best_category .category_absolute {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .choose_your_best_category .category_absolute {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=choose_your_best_category.css.map */
