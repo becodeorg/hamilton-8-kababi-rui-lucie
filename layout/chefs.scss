@@ -2,20 +2,25 @@
   position: relative;
   padding: 7rem 0;
   width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: black;
+  justify-content: center;
   align-items: center;
   gap: 10rem;
+  z-index: -1;
+  padding-bottom: 12rem;
   p {
     color: $white;
   }
   .p-top {
     position: absolute;
+    color: rgba(255, 255, 255, 0.068);
     top: 3%;
-    left: 0;
-    font-size: 12rem;
+    left: 3%;
+    font-size: 12.5rem;
+    letter-spacing: 1rem;
+    z-index: -1;
   }
 }
 
@@ -25,7 +30,14 @@
   flex-direction: column;
   gap: 2rem;
   text-align: center;
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
 }
+
 .chefs-container {
   display: flex;
   width: 80%;
@@ -47,13 +59,4 @@
     box-shadow: -5em 10em 10em rgba(255, 255, 255, 0.13),
       -5em -6em 10em rgba(255, 255, 255, 0.178);
   }
-
-  // &:nth-child(2) {
-  //   box-shadow: 50px 100px 100px rgba(255, 255, 255, 0.13),
-  //     50px -115px 100px rgba(255, 255, 255, 0.13);
-  // }
-  // &:nth-child(3) {
-  //   box-shadow: -50px 100px 100px rgba(255, 255, 255, 0.13),
-  //     -50px -115px 100px rgba(255, 255, 255, 0.178);
-  // }
 }

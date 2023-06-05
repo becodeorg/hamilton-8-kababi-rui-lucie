@@ -1,9 +1,9 @@
 @import "variable.scss";
-@import "header.scss";
-@import "footer.scss";
-@import "latest-news.scss";
-@import "chefs.scss";
-@import "restaurants-photos.scss";
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+@import "./layout/latest-news.scss";
+@import "./layout/chefs.scss";
+@import "./layout/restaurants-photos.scss";
 
 * {
   box-sizing: border-box;
@@ -14,6 +14,34 @@
 }
 body {
   width: 100%;
+}
+
+@media (max-width: 1800px) {
+  .meet-chefs,
+  .latest-news {
+    .p-top {
+      font-size: 10.5rem;
+    }
+  }
+  .restaurant-photos-container {
+    .p-low {
+      font-size: 10.5rem;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .meet-chefs,
+  .latest-news {
+    .p-top {
+      font-size: 9rem;
+    }
+  }
+  .restaurant-photos-container {
+    .p-low {
+      font-size: 9rem;
+    }
+  }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -60,16 +88,19 @@ body {
       }
     }
   }
-}
-
-@media (max-width: 1700px) {
   .meet-chefs,
   .latest-news {
     .p-top {
       font-size: 8rem;
     }
   }
+  .restaurant-photos-container {
+    .p-low {
+      font-size: 8rem;
+    }
+  }
 }
+
 @media (max-width: 1250px) {
   img {
     bottom: 80%;
@@ -77,10 +108,33 @@ body {
   .footer-bottom {
     flex-direction: column;
     align-items: center;
-    // gap: 2rem;
+  }
+  .meet-chefs,
+  .latest-news {
+    .p-top {
+      font-size: 6.5rem;
+    }
+  }
+  .restaurant-photos-container {
+    .p-low {
+      font-size: 6.5rem;
+    }
   }
 }
 
+@media (max-width: 1000px) {
+  .meet-chefs,
+  .latest-news {
+    .p-top {
+      font-size: 5rem;
+    }
+  }
+  .restaurant-photos-container {
+    .p-low {
+      font-size: 5rem;
+    }
+  }
+}
 @media only screen and (max-width: 950px) {
   header {
     .contenu_header {
@@ -108,6 +162,30 @@ body {
           line-height: 100px;
         }
       }
+    }
+  }
+  .chefs-title,
+  .latest-news-title,
+  .restaurant-photos-title {
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .meet-chefs,
+  .latest-news {
+    .p-top {
+      font-size: 3.5rem;
+    }
+  }
+  .restaurant-photos-container {
+    .p-low {
+      font-size: 3.5rem;
     }
   }
 }
