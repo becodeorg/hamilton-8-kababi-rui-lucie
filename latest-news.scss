@@ -5,13 +5,12 @@
   flex-direction: column;
   gap: 3rem;
   align-items: center;
-}
-
-.p-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 12rem;
+  .p-top {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    font-size: 12rem;
+  }
 }
 
 .latest-news-title {
@@ -91,10 +90,16 @@
 }
 
 @media (max-width: 1300px) {
+  .news-container {
+    flex-direction: column;
+  }
   .news {
-    width: 35%;
+    width: 100%;
+    flex-direction: row;
   }
   .news-text {
+    align-items: center;
+    justify-content: center;
     padding-bottom: 1rem;
     button {
       width: 60%;
@@ -111,20 +116,6 @@
       height: 4rem;
       width: 4rem;
     }
-  }
-}
-
-@media (max-width: 1300px) {
-  .news-container {
-    flex-direction: column;
-  }
-  .news {
-    width: 100%;
-    flex-direction: row;
-  }
-  .news-text {
-    align-items: center;
-    justify-content: center;
   }
 }
 

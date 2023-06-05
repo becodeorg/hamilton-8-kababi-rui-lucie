@@ -176,26 +176,25 @@ footer {
   color: rgb(138, 138, 138);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-image: url(./img/footer/img-ng-footer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  gap: 5rem;
+  gap: 10rem;
   flex-direction: column;
   min-height: 100vh;
 }
 
 .footer-title {
-  margin-bottom: 7rem;
+  margin-top: 5rem;
 }
 
 .footer-links {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
 }
 
 .footer-link {
@@ -330,9 +329,13 @@ footer {
   }
 }
 @media (max-width: 750px) {
+  footer {
+    gap: 5rem;
+  }
   .footer-links {
     display: grid;
     row-gap: 5rem;
+    margin-bottom: 2rem;
   }
 }
 .latest-news {
@@ -343,10 +346,9 @@ footer {
   gap: 3rem;
   align-items: center;
 }
-
-.p-top {
+.latest-news .p-top {
   position: absolute;
-  top: 0;
+  top: 3%;
   left: 0;
   font-size: 12rem;
 }
@@ -429,10 +431,16 @@ footer {
   }
 }
 @media (max-width: 1300px) {
+  .news-container {
+    flex-direction: column;
+  }
   .news {
-    width: 35%;
+    width: 100%;
+    flex-direction: row;
   }
   .news-text {
+    align-items: center;
+    justify-content: center;
     padding-bottom: 1rem;
   }
   .news-text button {
@@ -447,19 +455,6 @@ footer {
   .news-photos img {
     height: 4rem;
     width: 4rem;
-  }
-}
-@media (max-width: 1300px) {
-  .news-container {
-    flex-direction: column;
-  }
-  .news {
-    width: 100%;
-    flex-direction: row;
-  }
-  .news-text {
-    align-items: center;
-    justify-content: center;
   }
 }
 @media (max-width: 1000px) {
@@ -501,6 +496,57 @@ footer {
     width: 3.5rem;
   }
 }
+.meet-chefs {
+  position: relative;
+  padding: 7rem 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  gap: 10rem;
+}
+.meet-chefs p {
+  color: #ffffff;
+}
+.meet-chefs .p-top {
+  position: absolute;
+  top: 3%;
+  left: 0;
+  font-size: 12rem;
+}
+
+.chefs-title {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  z-index: 999;
+}
+
+.chefs-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chef-img {
+  font-size: 10px;
+  width: 20%;
+}
+.chef-img img {
+  width: 100%;
+}
+.chef-img:nth-child(2) {
+  box-shadow: 5em 10em 10em rgba(255, 255, 255, 0.13), 5em -6em 10em rgba(255, 255, 255, 0.13);
+}
+.chef-img:nth-child(3) {
+  box-shadow: -5em 10em 10em rgba(255, 255, 255, 0.13), -5em -6em 10em rgba(255, 255, 255, 0.178);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -550,6 +596,12 @@ body {
   }
   header .contenu_header .imgAndtitle h1 {
     font-size: 5rem;
+  }
+}
+@media (max-width: 1700px) {
+  .meet-chefs .p-top,
+  .latest-news .p-top {
+    font-size: 8rem;
   }
 }
 @media (max-width: 1250px) {
