@@ -2,13 +2,8 @@
 @import "header.scss";
 @import 'footer.scss';
 @import 'choose_your_best_category.scss';
-/* media du header => 
-- passe en menu burger à max 1400px
-Pour le responsive : 
-max 950px, 600px, 350px */
+@import 'why_choose_us.scss';
 
-/* media du footer =>
-1250px*/
 * {
   box-sizing: border-box;
   padding: 0;

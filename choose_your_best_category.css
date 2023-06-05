@@ -2,7 +2,7 @@
   width: 100%;
   background-image: url(img/banner/imgbgcategory.jpg);
   background-color: rgba(250, 246, 240, 0.6980392157);
-  background-size: 100% 100%;
+  background-size: contain;
   background-position: center left;
   text-align: center;
   position: relative;
@@ -62,22 +62,48 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .choose_your_best_category {
+    padding-bottom: 30px;
+    background-size: 90%;
+  }
   .choose_your_best_category .category_absolute {
     font-size: 10rem;
   }
 }
 @media only screen and (max-width: 950px) {
+  .choose_your_best_category {
+    padding-bottom: 50px;
+  }
   .choose_your_best_category .category_absolute {
     font-size: 7rem;
   }
+  .choose_your_best_category .title_choose_your_category h2 {
+    padding-top: 110px;
+    font-size: 2.5rem;
+  }
+  .choose_your_best_category .cards {
+    padding: 110px 0;
+  }
 }
 @media only screen and (max-width: 650px) {
+  .choose_your_best_category {
+    padding-bottom: 120px;
+  }
   .choose_your_best_category .category_absolute {
     font-size: 5rem;
+  }
+  .choose_your_best_category .title_choose_your_category h2 {
+    padding-top: 110px;
+    font-size: 2rem;
+    letter-spacing: -2px;
   }
 }
 @media only screen and (max-width: 450px) {
   .choose_your_best_category .category_absolute {
     font-size: 3rem;
+  }
+  .choose_your_best_category .title_choose_your_category h2 {
+    padding-top: 110px;
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=choose_your_best_category.css.map */
