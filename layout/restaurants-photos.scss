@@ -62,8 +62,14 @@
 .photos-together {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
   img {
-    width: 50%;
+    width: 48%;
+  }
+}
+
+@media (max-width: 900px) {
+  .resto-photos {
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
 }

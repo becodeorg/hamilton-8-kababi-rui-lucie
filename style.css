@@ -209,7 +209,7 @@ footer {
 .footer-link ul li {
   display: flex;
   gap: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 .footer-link ul li i {
@@ -225,6 +225,9 @@ footer {
   flex-direction: column;
   gap: 1.5rem;
 }
+.footer-link-input p {
+  font-size: 1.5rem;
+}
 .footer-link-input h3 {
   color: rgb(255, 255, 255);
   font-size: 2rem;
@@ -234,6 +237,7 @@ footer {
   width: 100%;
 }
 .footer-link-input .email-input input {
+  font-size: 1.2rem;
   padding: 1rem;
   height: 3rem;
   width: 70%;
@@ -254,8 +258,9 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  padding-top: 4rem;
+  padding-top: 5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.253);
+  font-size: 1.3rem;
 }
 .footer-bottom img {
   position: absolute;
@@ -332,6 +337,14 @@ footer {
     display: grid;
     row-gap: 5rem;
     margin-bottom: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .footer-link ul li {
+    font-size: 1.2rem;
+  }
+  .footer-link-input .email-input input {
+    font-size: 1rem;
   }
 }
 .latest-news {
@@ -497,6 +510,9 @@ footer {
   }
 }
 @media (max-width: 600px) {
+  .date-user p {
+    font-size: 1rem;
+  }
   .news-photos {
     gap: 1rem;
   }
@@ -638,12 +654,17 @@ footer {
 .photos-together {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
 }
 .photos-together img {
-  width: 50%;
+  width: 48%;
 }
 
+@media (max-width: 900px) {
+  .resto-photos {
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+  }
+}
 @font-face {
   font-family: "Baanoo";
   src: url("./webfonts_Baanoo/Baanoo.ttf.woff") format("woff");
