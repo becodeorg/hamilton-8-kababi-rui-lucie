@@ -10,7 +10,7 @@
     color: $creme;
     top: 1%;
     left: 3%;
-    font-size: 13.5rem;
+    font-size: 10vw;
     letter-spacing: 1rem;
     z-index: -1;
   }
@@ -24,10 +24,10 @@
   align-items: center;
   margin: 7rem 0 3rem 0;
   h2 {
-    font-size: 3rem;
+    font-size: 3vw;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 2.5vw;
   }
 }
 
@@ -47,6 +47,7 @@
   align-items: center;
   gap: 1rem;
   height: 100%;
+  font-size: 1.3rem;
   img {
     display: block;
     width: 100%;
@@ -55,11 +56,12 @@
   button {
     background-color: $white;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1rem;
     width: 50%;
     padding: 1rem;
     border: none;
     border-radius: 0.35rem;
+    word-spacing: 0.2rem;
     &:hover {
       cursor: pointer;
       background-color: $or;
@@ -74,6 +76,9 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  p {
+    height: 5rem;
+  }
 }
 .date-user {
   display: flex;
@@ -83,6 +88,7 @@
     color: $or;
   }
   p {
+    height: auto;
     font-size: 0.9rem;
   }
 }
@@ -91,7 +97,7 @@
   width: 80%;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 1450px) {
@@ -118,7 +124,12 @@
   }
 
   .date-user {
+    width: 80%;
     gap: 1rem;
+    justify-content: space-between;
+    p {
+      font-size: 1.2rem;
+    }
   }
 
   .news-photos {
@@ -131,18 +142,17 @@
 }
 
 @media (max-width: 1000px) {
-  .news {
-    img {
-      width: 40%;
-      height: 100%;
-    }
+  .latest-news {
+    gap: 0;
+  }
+  .news-container {
+    margin-bottom: 3rem;
   }
 }
 
 @media (max-width: 900px) {
   .news {
     flex-direction: column;
-    width: 50%;
     .news-text {
       padding: 0 0 1rem 0;
     }
@@ -156,12 +166,6 @@
 }
 
 @media (max-width: 600px) {
-  .date-user {
-    flex-direction: column;
-    p {
-      font-size: 0.8rem;
-    }
-  }
   .news-photos {
     img {
       height: 3.5rem;

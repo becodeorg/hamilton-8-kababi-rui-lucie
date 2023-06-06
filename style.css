@@ -1,8 +1,3 @@
-@charset "UTF-8";
-/* media du header => 
-- passe en menu burger à max 1400px
-Pour le responsive : 
-max 950px, 600px, 350px */
 header {
   height: 100vh;
   background-image: url(img/slider/img_bg_slider_home01.jpg);
@@ -63,7 +58,6 @@ header .topnav .topnav_menu .nav_links2 li .btn_nav {
   background-color: #c8a96a;
   padding: 20px 30px;
   border-radius: 5px;
-  font-family: "brands";
   font-weight: 400;
 }
 header .topnav .icon_hamburger {
@@ -91,7 +85,6 @@ header .contenu_header .imgAndtitle h1 {
   width: 300px;
   line-height: 150px;
   letter-spacing: -7px;
-  font-family: fabrands;
   font-weight: 400;
   margin-bottom: 50px;
 }
@@ -216,6 +209,7 @@ footer {
 .footer-link ul li {
   display: flex;
   gap: 0.5rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 .footer-link ul li i {
@@ -353,7 +347,7 @@ footer {
   color: #f1ece4;
   top: 1%;
   left: 3%;
-  font-size: 13.5rem;
+  font-size: 10vw;
   letter-spacing: 1rem;
   z-index: -1;
 }
@@ -367,10 +361,10 @@ footer {
   margin: 7rem 0 3rem 0;
 }
 .latest-news-title h2 {
-  font-size: 3rem;
+  font-size: 3vw;
 }
 .latest-news-title p {
-  font-size: 1.5rem;
+  font-size: 2.5vw;
 }
 
 .news-container {
@@ -389,6 +383,7 @@ footer {
   align-items: center;
   gap: 1rem;
   height: 100%;
+  font-size: 1.3rem;
 }
 .news img {
   display: block;
@@ -398,11 +393,12 @@ footer {
 .news button {
   background-color: #ffffff;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 1rem;
   width: 50%;
   padding: 1rem;
   border: none;
   border-radius: 0.35rem;
+  word-spacing: 0.2rem;
 }
 .news button:hover {
   cursor: pointer;
@@ -417,6 +413,9 @@ footer {
   flex-direction: column;
   gap: 2rem;
 }
+.news-text p {
+  height: 5rem;
+}
 
 .date-user {
   display: flex;
@@ -427,6 +426,7 @@ footer {
   color: #c8a96a;
 }
 .date-user p {
+  height: auto;
   font-size: 0.9rem;
 }
 
@@ -434,7 +434,7 @@ footer {
   width: 80%;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 1450px) {
@@ -459,7 +459,12 @@ footer {
     width: 60%;
   }
   .date-user {
+    width: 80%;
     gap: 1rem;
+    justify-content: space-between;
+  }
+  .date-user p {
+    font-size: 1.2rem;
   }
   .news-photos {
     margin-top: 2rem;
@@ -470,15 +475,16 @@ footer {
   }
 }
 @media (max-width: 1000px) {
-  .news img {
-    width: 40%;
-    height: 100%;
+  .latest-news {
+    gap: 0;
+  }
+  .news-container {
+    margin-bottom: 3rem;
   }
 }
 @media (max-width: 900px) {
   .news {
     flex-direction: column;
-    width: 50%;
   }
   .news .news-text {
     padding: 0 0 1rem 0;
@@ -491,12 +497,6 @@ footer {
   }
 }
 @media (max-width: 600px) {
-  .date-user {
-    flex-direction: column;
-  }
-  .date-user p {
-    font-size: 0.8rem;
-  }
   .news-photos {
     gap: 1rem;
   }
@@ -523,10 +523,10 @@ footer {
 }
 .meet-chefs .p-top {
   position: absolute;
-  color: rgba(255, 255, 255, 0.068);
+  color: rgba(255, 255, 255, 0.123);
   top: 3%;
   left: 3%;
-  font-size: 12.5rem;
+  font-size: 10vw;
   letter-spacing: 1rem;
   z-index: -1;
 }
@@ -539,24 +539,25 @@ footer {
   text-align: center;
 }
 .chefs-title h2 {
-  font-size: 3rem;
+  font-size: 3vw;
 }
 .chefs-title p {
-  font-size: 1.5rem;
+  font-size: 2.5vw;
 }
 
 .chefs-container {
   display: flex;
   width: 80%;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
 .chef-img {
-  font-size: 10px;
   width: 20%;
 }
 .chef-img img {
+  display: block;
   width: 100%;
 }
 .chef-img:nth-child(2) {
@@ -566,6 +567,14 @@ footer {
   box-shadow: -5em 10em 10em rgba(255, 255, 255, 0.13), -5em -6em 10em rgba(255, 255, 255, 0.178);
 }
 
+@media (max-width: 760px) {
+  .chefs-container {
+    row-gap: 4rem;
+  }
+  .chef-img {
+    width: 40%;
+  }
+}
 .restaurant-photos-container {
   position: relative;
   width: 100%;
@@ -577,11 +586,13 @@ footer {
   padding: 6rem 0rem;
 }
 .restaurant-photos-container button {
+  font-size: 1rem;
   padding: 1rem 2rem;
   background-color: #ffffff;
   font-weight: bold;
   border: 1px solid rgba(199, 199, 199, 0.452);
   border-radius: 0.3rem;
+  word-spacing: 0.2rem;
 }
 .restaurant-photos-container button:hover {
   cursor: pointer;
@@ -593,7 +604,7 @@ footer {
   color: #f1ece4;
   top: 3%;
   left: 1%;
-  font-size: 12.5rem;
+  font-size: 10vw;
   z-index: -1;
 }
 
@@ -604,10 +615,10 @@ footer {
   text-align: center;
 }
 .restaurant-photos-title h2 {
-  font-size: 3rem;
+  font-size: 3vw;
 }
 .restaurant-photos-title p {
-  font-size: 1.5rem;
+  font-size: 2.5vw;
 }
 
 .resto-photos {
@@ -633,36 +644,25 @@ footer {
   width: 50%;
 }
 
+@font-face {
+  font-family: "Baanoo";
+  src: url("./webfonts_Baanoo/Baanoo.ttf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
+  font-family: "Baanoo";
 }
 
 body {
   width: 100%;
 }
 
-@media (max-width: 1800px) {
-  .meet-chefs .p-top,
-  .latest-news .p-top {
-    font-size: 10.5rem;
-  }
-  .restaurant-photos-container .p-low {
-    font-size: 10.5rem;
-  }
-}
-@media (max-width: 1600px) {
-  .meet-chefs .p-top,
-  .latest-news .p-top {
-    font-size: 9rem;
-  }
-  .restaurant-photos-container .p-low {
-    font-size: 9rem;
-  }
-}
 @media only screen and (max-width: 1400px) {
   header .topnav .icon_hamburger {
     display: block;
@@ -701,13 +701,6 @@ body {
   header .contenu_header .imgAndtitle h1 {
     font-size: 5rem;
   }
-  .meet-chefs .p-top,
-  .latest-news .p-top {
-    font-size: 8rem;
-  }
-  .restaurant-photos-container .p-low {
-    font-size: 8rem;
-  }
 }
 @media (max-width: 1250px) {
   img {
@@ -716,22 +709,6 @@ body {
   .footer-bottom {
     flex-direction: column;
     align-items: center;
-  }
-  .meet-chefs .p-top,
-  .latest-news .p-top {
-    font-size: 6.5rem;
-  }
-  .restaurant-photos-container .p-low {
-    font-size: 6.5rem;
-  }
-}
-@media (max-width: 1000px) {
-  .meet-chefs .p-top,
-  .latest-news .p-top {
-    font-size: 5rem;
-  }
-  .restaurant-photos-container .p-low {
-    font-size: 5rem;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -753,25 +730,6 @@ body {
     font-size: 4rem;
     margin-top: 100px;
     line-height: 100px;
-  }
-  .chefs-title h2,
-  .latest-news-title h2,
-  .restaurant-photos-title h2 {
-    font-size: 2rem;
-  }
-  .chefs-title p,
-  .latest-news-title p,
-  .restaurant-photos-title p {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 500px) {
-  .meet-chefs .p-top,
-  .latest-news .p-top {
-    font-size: 3.5rem;
-  }
-  .restaurant-photos-container .p-low {
-    font-size: 3.5rem;
   }
 }
 @media only screen and (max-width: 350px) {

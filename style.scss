@@ -1,9 +1,17 @@
-@import "variable.scss";
+@import "./variables/variable.scss";
+@import "./mixins/mixins.scss";
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 @import "./layout/latest-news.scss";
 @import "./layout/chefs.scss";
 @import "./layout/restaurants-photos.scss";
+
+@font-face {
+  font-family: "Baanoo";
+  src: url("./webfonts_Baanoo/Baanoo.ttf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
@@ -11,37 +19,11 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
+  font-family: "Baanoo";
 }
+
 body {
   width: 100%;
-}
-
-@media (max-width: 1800px) {
-  .meet-chefs,
-  .latest-news {
-    .p-top {
-      font-size: 10.5rem;
-    }
-  }
-  .restaurant-photos-container {
-    .p-low {
-      font-size: 10.5rem;
-    }
-  }
-}
-
-@media (max-width: 1600px) {
-  .meet-chefs,
-  .latest-news {
-    .p-top {
-      font-size: 9rem;
-    }
-  }
-  .restaurant-photos-container {
-    .p-low {
-      font-size: 9rem;
-    }
-  }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -88,17 +70,6 @@ body {
       }
     }
   }
-  .meet-chefs,
-  .latest-news {
-    .p-top {
-      font-size: 8rem;
-    }
-  }
-  .restaurant-photos-container {
-    .p-low {
-      font-size: 8rem;
-    }
-  }
 }
 
 @media (max-width: 1250px) {
@@ -109,32 +80,8 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .meet-chefs,
-  .latest-news {
-    .p-top {
-      font-size: 6.5rem;
-    }
-  }
-  .restaurant-photos-container {
-    .p-low {
-      font-size: 6.5rem;
-    }
-  }
 }
 
-@media (max-width: 1000px) {
-  .meet-chefs,
-  .latest-news {
-    .p-top {
-      font-size: 5rem;
-    }
-  }
-  .restaurant-photos-container {
-    .p-low {
-      font-size: 5rem;
-    }
-  }
-}
 @media only screen and (max-width: 950px) {
   header {
     .contenu_header {
@@ -162,30 +109,6 @@ body {
           line-height: 100px;
         }
       }
-    }
-  }
-  .chefs-title,
-  .latest-news-title,
-  .restaurant-photos-title {
-    h2 {
-      font-size: 2rem;
-    }
-    p {
-      font-size: 1rem;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .meet-chefs,
-  .latest-news {
-    .p-top {
-      font-size: 3.5rem;
-    }
-  }
-  .restaurant-photos-container {
-    .p-low {
-      font-size: 3.5rem;
     }
   }
 }
