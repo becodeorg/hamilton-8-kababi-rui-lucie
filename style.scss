@@ -95,6 +95,16 @@ body {
   }
 }
 
+@media (max-width: 850px) {
+  .latest-news-title,
+  .restaurant-photos-title,
+  .chefs-title {
+    h2 {
+      font-size: 2.8rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 600px) {
   header {
     .contenu_header {
@@ -109,6 +119,16 @@ body {
           line-height: 100px;
         }
       }
+    }
+  }
+  .latest-news-title,
+  .restaurant-photos-title,
+  .chefs-title {
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.3rem;
     }
   }
 }
