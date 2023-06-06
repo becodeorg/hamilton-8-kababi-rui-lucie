@@ -74,7 +74,6 @@ footer {
       padding: 1rem;
       height: 3rem;
       width: 70%;
-      height: 100%;
       border: none;
       &:focus {
         outline: none;
@@ -168,6 +167,7 @@ footer {
     width: 100%;
     display: grid;
     flex-direction: column;
+    text-align: start;
   }
 
   .footer-link-input {
@@ -200,5 +200,49 @@ footer {
         font-size: 1rem;
       }
     }
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-links {
+    text-align: center;
+    grid-template-columns: 50% 50%;
+    column-gap: 2rem;
+    row-gap: 3rem;
+  }
+  .footer-link-input {
+    text-align: start;
+    p {
+      font-size: 1.2rem;
+    }
+    input {
+      height: auto;
+    }
+  }
+  .footer-link {
+    ul {
+      text-align: start;
+      gap: 0.2rem;
+      li {
+        display: flex;
+        flex-direction: column;
+        i {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .contact {
+    text-align: center;
+    ul {
+      li {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
   }
 }

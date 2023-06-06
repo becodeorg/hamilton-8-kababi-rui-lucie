@@ -22,7 +22,7 @@
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  margin: 7rem 0 3rem 0;
+  margin: 4rem 0 3rem 0;
   h2 {
     font-weight: 500;
     font-size: 4rem;
@@ -97,6 +97,7 @@
 .news-photos {
   width: 80%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 4rem;
 }
@@ -176,6 +177,12 @@
   }
   .news-text p {
     height: auto;
+  }
+}
+@media (max-width: 700px) {
+  .latest-news-title {
+    margin-top: 2;
+    gap: 0;
   }
 }
 
