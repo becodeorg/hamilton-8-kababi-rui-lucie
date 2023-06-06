@@ -68,20 +68,27 @@ footer {
   .email-input {
     display: flex;
     width: 100%;
+    max-height: 62px;
     input {
       font-size: 1.2rem;
       padding: 1rem;
       height: 3rem;
       width: 70%;
+      height: 100%;
+      border: none;
+      &:focus {
+        outline: none;
+      }
     }
     button {
+      border: none;
       height: 100%;
-      width: 3rem;
-      background-color: #c8a96a;
+      width: 14%;
+      background-color: #9e8553;
       border: none;
       &:hover {
         cursor: pointer;
-        background-color: #c8a96a;
+        background-color: $or;
       }
     }
   }
