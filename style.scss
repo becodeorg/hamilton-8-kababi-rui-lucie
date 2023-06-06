@@ -1,20 +1,20 @@
-@import "./variables/variable.scss";
-@import "./mixins/mixins.scss";
-@import "./layout/header.scss";
-@import "./layout/footer.scss";
+@import 'variables/variable.scss';
+@import 'mixins/mixins.scss';
+@import 'layout/header.scss';
+@import 'layout/choose_your_best_category.scss';
+@import 'layout/why_choose_us.scss';
+@import 'layout/try_your_special_offer';
 @import "./layout/latest-news.scss";
 @import "./layout/chefs.scss";
 @import "./layout/restaurants-photos.scss";
-
-@import "./layout/try_your_special_offer";
-
+@import 'layout/footer.scss';
 @font-face {
   font-family: "Baanoo";
   src: url("./webfonts_Baanoo/Baanoo.ttf.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
+/* font-family: 'Kanit', sans-serif; 100-200-300-400-500-600*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -23,131 +23,10 @@
   list-style: none;
   font-family: "Baanoo";
 }
-
 body {
   width: 100%;
+  overflow-x: hidden;
 }
 
-@media only screen and (max-width: 1400px) {
-  header {
-    .topnav {
-      .icon_hamburger {
-        display: block;
-      }
-      .topnav_menu,
-      .nav_links,
-      .nav_links2 {
-        flex-direction: column;
-      }
-      .nav_links {
-        margin-bottom: 50px;
-      }
-      .topnav_menu {
-        height: 100vh;
-        padding: 10%;
-        backdrop-filter: blur(15px);
-        z-index: 99;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform-origin: 0% 0%;
-        transform: translate(200%, 0%);
-        transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
-      }
-      .topnav_menu.active {
-        transform: none;
-        position: fixed;
-        transition: transform 0.5 ease;
-        width: 100%;
-      }
-    }
-    .contenu_header {
-      .imgAndtitle {
-        width: 40%;
-        h1 {
-          font-size: 5rem;
-        }
-      }
-    }
-  }
-}
 
-@media (max-width: 1250px) {
-  img {
-    bottom: 80%;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
-@media only screen and (max-width: 950px) {
-  header {
-    .contenu_header {
-      .imgAndtitle {
-        width: 60%;
-        h1 {
-          margin-top: 100px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 850px) {
-  .latest-news-title,
-  .restaurant-photos-title,
-  .chefs-title {
-    h2 {
-      font-size: 2.8rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-    .contenu_header {
-      .imgAndtitle {
-        width: 90%;
-        img {
-          width: 120px;
-        }
-        h1 {
-          font-size: 4rem;
-          margin-top: 100px;
-          line-height: 100px;
-        }
-      }
-    }
-  }
-  .latest-news-title,
-  .restaurant-photos-title,
-  .chefs-title {
-    h2 {
-      font-size: 2rem;
-    }
-    p {
-      font-size: 1.3rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  header {
-    .contenu_header {
-      .imgAndtitle {
-        img {
-          width: 100px;
-        }
-        h1 {
-          font-size: 3.5rem;
-          margin-top: 100px;
-          line-height: 100px;
-        }
-      }
-    }
-  }
-}

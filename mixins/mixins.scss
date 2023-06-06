@@ -1,26 +1,30 @@
-@mixin displayCenterRow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@mixin displayCenterRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@mixin displayCenterRowNoAlign {
-  display: flex;
-  justify-content: center;
+@mixin displayCenterRowNoJustify{
+    display: flex;
+    align-items: center;
 }
-@mixin displayCenterColumn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+@mixin displayCenterRowNoAlign{
+    display: flex;
+    justify-content: center;
 }
-@mixin displayCenterColumnNoJustify {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+@mixin displayCenterColumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin displayCenterColumnNoJustify{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-@mixin displayCenterBetween {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@mixin displayCenterBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
