@@ -248,6 +248,10 @@ footer {
   outline: none;
 }
 .footer-link-input .email-input button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
   border: none;
   height: 100%;
   width: 14%;
@@ -374,10 +378,6 @@ footer {
     text-align: start;
     gap: 0.2rem;
   }
-  .footer-link ul li {
-    display: flex;
-    flex-direction: column;
-  }
   .footer-link ul li i {
     text-align: center;
   }
@@ -385,6 +385,8 @@ footer {
     text-align: center;
   }
   .contact ul li {
+    display: flex;
+    flex-direction: column;
     font-size: 1.1rem;
     text-align: center;
   }
