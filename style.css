@@ -666,8 +666,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  row-gap: 1rem;
-  column-gap: 1rem;
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
 }
 .resto-photos img {
   width: 100%;
@@ -684,8 +684,21 @@ footer {
 
 @media (max-width: 900px) {
   .resto-photos {
+    margin-top: auto;
     row-gap: 0.5rem;
     column-gap: 0.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .resto-photos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .resto-photos img {
+    max-height: 246.34px;
+  }
+  .photos-together img {
+    width: 49%;
   }
 }
 @font-face {
