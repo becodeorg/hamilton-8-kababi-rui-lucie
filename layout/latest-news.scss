@@ -57,7 +57,7 @@
     background-color: $white;
     font-weight: bold;
     font-size: 1rem;
-    width: 50%;
+    width: 60%;
     padding: 1rem;
     border: none;
     border-radius: 0.35rem;
@@ -82,14 +82,14 @@
 }
 .date-user {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 1rem;
   i {
     color: $or;
   }
   p {
     height: auto;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
@@ -141,6 +141,16 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .date-user {
+    width: 80%;
+    gap: 1rem;
+    justify-content: space-between;
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
 @media (max-width: 1000px) {
   .latest-news {
     gap: 0;
@@ -162,6 +172,9 @@
     button {
       width: 90%;
     }
+  }
+  .news-text p {
+    height: auto;
   }
 }
 
