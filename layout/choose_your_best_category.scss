@@ -1,41 +1,41 @@
-@import 'variable.scss';
+.bg_color{
+    background-color: $creme;
 .choose_your_best_category{
     width: 100%;
-    background-image: url(img/banner/imgbgcategory.jpg);
-    background-color: #faf6f0b2 ;
+    background-image: url(img/banner/imgbgcategory.png);
     background-size: contain;
-    background-position: center left;
+    background-position: top left;
     text-align: center;
+    min-height: 100vh;
     position: relative;
-    min-height: 80vh;
-    z-index: -2;
+    @include displayCenterColumn;
+        .category_absolute{
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            font-size: 320px;
+            letter-spacing: -35px;
+            color: $mediumcreme;
+        }
     .title_choose_your_category{
         z-index: 1;
+        top: 150px;
         h2{
-            padding-top: 150px;
-            font-size: 3.5rem;
+            font-size: 60px;
             font-weight: 100;
-            letter-spacing: -2px;
+            letter-spacing: -4px;
         }
         p{
-            padding-top: 20px;
+            font-family: 'Kanit', sans-serif;
+            font-weight: 400;
         }
     }
-    .category_absolute{
-        position: absolute;
-        left: 10px;
-        top: 80px;
-        font-size: 13rem;
-        letter-spacing: -5px;
-        color: $mediumcreme;
-        z-index: -1;
-    }
+
     .cards{
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         width: 100%;
-        min-height: 100vh;
-        justify-content: center;
         padding: 150px 0;
         gap: 30px;
         .card{
@@ -43,45 +43,44 @@
             height: 200px;
             background-color: $white;
             color: black;
+            font-size: 22px;
             &:hover{
                 background-color: $or;
-                color: $white;
+                p, i{
+                    color: $white;
+                }
                 .icon_choose_category{
                     color: $white;
                 }
             }
             i{
-                padding-top: 20px;
+                padding-top: 9px;
             }
             .icon_choose_category{
-                font-size: 3rem;
-                padding: 30px 30px;
+                font-size: 50px;
+                padding: 32px 30px 20px 30px;
                 color: $or;
             }
         }
     }
 }
+}
 
 @media only screen and (max-width:1200px){
     .choose_your_best_category{
+        background-size: cover;
         padding-bottom : 30px;
         background-size: 90%;
-        .category_absolute{
-            font-size: 10rem;
-        }
+
     }
 }
 
 @media only screen and (max-width:950px){
     .choose_your_best_category{
         padding-bottom : 50px;
-        .category_absolute{
-            font-size: 7rem;
-        }
         .title_choose_your_category{
             h2{
                 padding-top: 110px;
-                font-size: 2.5rem;
             }
         }
         .cards{
@@ -99,22 +98,9 @@
         .title_choose_your_category{
             h2{
                 padding-top: 110px;
-                font-size: 2rem;
                 letter-spacing: -2px;
             }
         }
     }
 }
-@media only screen and (max-width:450px){
-    .choose_your_best_category{
-        .category_absolute{
-            font-size: 3rem;
-        }
-        .title_choose_your_category{
-            h2{
-                padding-top: 110px;
-                font-size: 2rem;
-            }
-        }
-    }
-}
+

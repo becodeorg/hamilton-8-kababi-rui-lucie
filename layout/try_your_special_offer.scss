@@ -1,0 +1,96 @@
+main{
+    .try_your_special_offer{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        z-index: -2;
+        background-color: $creme;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .pain,
+        .our_menu_absolute,
+        .steak{
+            position: absolute;
+            z-index: -1;
+        }
+        .pain{
+            right: 0;
+            top:0;
+            height: 100%;
+        }
+        .steak{
+            left:0;
+            bottom: -20%;
+        }
+        .our_menu_absolute{
+            left:10px;
+            top: 100px;
+            font-size: 13rem;
+            letter-spacing: -7px;
+            color: $mediumcreme;
+        }
+        .title_special_offer{
+            padding: 150px 20px 100px 20px;
+            text-align: center;
+            h2{
+                margin-bottom: 20px;
+                font-size: 3.5rem;
+                font-weight: 100;
+                letter-spacing: -2px;
+            }
+        }
+        .contenu_try_your_special_offer{
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            .cards{
+                width: 560px;
+                height: 100px;
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 40px;
+                border: dashed 2px $or;
+                border-radius: 5px;
+                line-height: 30px;
+                .prix{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width:1650px){
+    .try_your_special_offer{
+        .pain{
+            width: 200px;
+        }
+        .our_menu_absolute{
+            left:10px;
+            top: 100px;
+            font-size: 13rem;
+            letter-spacing: -7px;
+            color: $mediumcreme;
+        }
+        .title_special_offer{
+            padding: 150px 20px 100px 20px;
+            text-align: center;
+            h2{
+                margin-bottom: 20px;
+                font-size: 3.5rem;
+                font-weight: 100;
+                letter-spacing: -2px;
+            }
+        }
+        .contenu_try_your_special_offer{
+            width: 100%;
+        }
+        
+    }
+}

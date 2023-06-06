@@ -1,20 +1,28 @@
-@import "variable.scss";
-@import "header.scss";
-@import 'footer.scss';
-@import 'choose_your_best_category.scss';
-@import 'why_choose_us.scss';
-
+@import 'variables/variable.scss';
+@import 'mixins/mixins.scss';
+@import 'layout/header.scss';
+@import 'layout/footer.scss';
+@import 'layout/choose_your_best_category.scss';
+@import 'layout/why_choose_us.scss';
+@import 'layout/try_your_special_offer';
+@font-face {
+  font-family: "Baanoo";
+  src: url("./webfonts_Baanoo/Baanoo.ttf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* font-family: 'Kanit', sans-serif; 100-200-300-400-500-600*/
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
+  font-family: "Baanoo";
 }
 body {
   width: 100%;
 }
-
 
 
 
