@@ -1,5 +1,5 @@
 header {
-  height: 100vh;
+  height: 110vh;
   background: url(img/slider/img_bg_slider_home01.jpg) no-repeat;
 }
 header .container_header {
@@ -523,6 +523,11 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
   .pain,
   .steak {
     display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .try_your_special_offer .contenu_try_your_special_offer .cards {
+    width: 90%;
   }
 }
 .latest-news {
