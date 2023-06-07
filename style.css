@@ -146,7 +146,8 @@ header .contenu_header a i {
     height: 100vh;
     width: 100vw;
     padding: 10%;
-    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.719);
+    backdrop-filter: blur(7px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +172,7 @@ header .contenu_header a i {
 }
 @media only screen and (max-width: 750px) {
   header .contenu_header {
-    margin-top: 25%;
+    margin-top: 15%;
   }
   header .contenu_header .imgAndtitle {
     width: 400px;
