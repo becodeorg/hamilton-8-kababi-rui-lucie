@@ -81,7 +81,7 @@ header .topnav .icon_hamburger {
   display: none;
 }
 header .contenu_header {
-  width: 100%;
+  max-width: 100%;
   margin: 5% 10%;
 }
 header .contenu_header .imgAndtitle {
@@ -153,15 +153,12 @@ header .contenu_header a i {
     position: absolute;
     top: 0;
     right: 0;
-    transform-origin: 0% 0%;
-    transform: translate(200%, 0%);
-    transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
   header .topnav .topnav_menu.active {
-    transform: none;
+    display: block;
     position: fixed;
-    transition: transform 0.5 ease;
-    width: 100%;
+    left: 0;
+    width: 100vw;
   }
   header .contenu_header .imgAndtitle {
     margin-top: 15%;
@@ -183,6 +180,12 @@ header .contenu_header a i {
   }
 }
 @media only screen and (max-width: 450px) {
+  header .topnav {
+    position: relative;
+  }
+  header .topnav .topnav_menu {
+    display: none;
+  }
   header .contenu_header .imgAndtitle {
     width: 300px;
     margin-top: 40%;
@@ -214,10 +217,9 @@ header .contenu_header a i {
 }
 .bg_color .choose_your_best_category .category_absolute {
   position: absolute;
-  left: 10px;
-  top: 20px;
-  font-size: 320px;
-  letter-spacing: -35px;
+  left: 2%;
+  top: 0;
+  font-size: 10vw;
   color: #F5EEE3;
 }
 .bg_color .choose_your_best_category .title_choose_your_category {
@@ -252,7 +254,8 @@ header .contenu_header a i {
 .bg_color .choose_your_best_category .cards .card:hover {
   background-color: #C8A96A;
 }
-.bg_color .choose_your_best_category .cards .card:hover p, .bg_color .choose_your_best_category .cards .card:hover i {
+.bg_color .choose_your_best_category .cards .card:hover p,
+.bg_color .choose_your_best_category .cards .card:hover i {
   color: #FFFFFF;
 }
 .bg_color .choose_your_best_category .cards .card:hover .icon_choose_category {
@@ -271,9 +274,6 @@ header .contenu_header a i {
   main .bg_color .choose_your_best_category .title_choose_your_category {
     padding: 100px 20px 0 20px;
   }
-  main .bg_color .choose_your_best_category .category_absolute {
-    font-size: 200px;
-  }
 }
 @media only screen and (max-width: 450px) {
   main .bg_color .choose_your_best_category .title_choose_your_category {
@@ -281,9 +281,6 @@ header .contenu_header a i {
   }
   main .bg_color .choose_your_best_category .title_choose_your_category h2 {
     font-size: 40px;
-  }
-  main .bg_color .choose_your_best_category .category_absolute {
-    font-size: 200px;
   }
   main .bg_color .cards {
     display: flex;
@@ -348,10 +345,9 @@ main .about_us .title_about_us .icon_about_absolute {
 }
 main .about_us .about_us_absolute {
   position: absolute;
-  left: 10px;
-  top: 150px;
-  font-size: 13rem;
-  letter-spacing: -7px;
+  left: 2%;
+  top: 10%;
+  font-size: 10vw;
   color: #F5EEE3;
   z-index: -1;
   text-transform: uppercase;
@@ -475,9 +471,10 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
 
 .our_menu_absolute {
   top: 0;
-  left: 0;
-  word-spacing: 2rem;
-  font-size: 13rem;
+  left: 3%;
+  font-size: 10vw;
+  letter-spacing: 1rem;
+  z-index: -1;
   color: #F5EEE3;
 }
 
