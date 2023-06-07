@@ -18,4 +18,10 @@ This was the given mockup that we had to recreate and build our project.
 
 ### Live preview:
 
-If you click on [this link](https://becodeorg.github.io/hamilton-8-kababi-rui-lucie/) it will allow you to see how my final projects looks like.
+If you click on [this link](https://becodeorg.github.io/hamilton-8-kababi-rui-lucie/) it will allow you to see how our final project looks like.
+
+### contributors:
+
+This project was made by:
+[Rui Silva](https://github.com/ruisinhofilipe)
+[Lucie Monteiro](https://github.com/luciemtro)
