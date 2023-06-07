@@ -1,5 +1,4 @@
 .restaurant-photos-container {
-  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -25,15 +24,17 @@
   .p-low {
     position: absolute;
     color: $creme;
-    top: 0;
-    left: 1%;
-    font-size: 11vw;
+    left: 0;
+    top: -50%;
+    font-size: 15vw;
     z-index: -1;
   }
 }
 
 .restaurant-photos-title {
+  position: relative;
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 2rem;
   text-align: center;
@@ -72,6 +73,14 @@
     margin-top: auto;
     row-gap: 0.5rem;
     column-gap: 0.5rem;
+  }
+  .restaurant-photos-title {
+    h2 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
   }
 }
 
