@@ -71,3 +71,15 @@
     width: 40%;
   }
 }
+
+@media only screen and (max-width: 400px){
+  .chefs-container{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    row-gap: 0;
+    gap: 2rem;
+  }
+  .chef-img{
+    width: 95%;
+  }
+}
