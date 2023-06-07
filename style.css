@@ -126,6 +126,11 @@ header .contenu_header a i {
   padding-left: 10px;
 }
 
+@media only screen and (min-width: 1501px) {
+  header .topnav .topnav_menu {
+    display: flex !important;
+  }
+}
 @media only screen and (max-width: 1500px) {
   header .topnav .icon_hamburger {
     display: block;

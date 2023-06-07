@@ -113,6 +113,16 @@ header {
   }
 }
 
+@media only screen and (min-width: 1501px) {
+  header {
+    .topnav {
+      .topnav_menu {
+        @include fixDisplayNav(flex !important);
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1500px) {
   header {
     .topnav {
