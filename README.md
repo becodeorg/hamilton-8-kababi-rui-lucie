@@ -23,5 +23,6 @@ If you click on [this link](https://becodeorg.github.io/hamilton-8-kababi-rui-lu
 ### contributors:
 
 This project was made by:
-[Rui Silva](https://github.com/ruisinhofilipe)
-[Lucie Monteiro](https://github.com/luciemtro)
+
+- [Rui Silva](https://github.com/ruisinhofilipe)
+- [Lucie Monteiro](https://github.com/luciemtro)
