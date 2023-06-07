@@ -346,6 +346,7 @@ main .about_us .title_about_us p {
 }
 main .about_us .icon_about_absolute {
   position: absolute;
+  width: 10vw;
   top: 20%;
   right: 20%;
 }
@@ -399,6 +400,12 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
   padding-left: 10px;
 }
 
+@media only screen and (max-width: 1760px) {
+  main .about_us .contenu_about_us {
+    width: 80%;
+    display: flex;
+  }
+}
 @media only screen and (max-width: 1500px) {
   .why_choose_us .images_top_choose_us img {
     width: 230px;
@@ -410,11 +417,9 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
     font-size: 2rem;
     margin-top: 100px;
   }
-  .why_choose_us .about_us .title_about_us .icon_about_absolute {
+  .icon_about_absolute {
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
+    right: 0;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -439,6 +444,9 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
   }
   .why_choose_us .about_us .contenu_about_us {
     flex-direction: column;
+    align-items: center;
+  }
+  main .about_us .contenu_about_us .text_about_us {
     align-items: center;
   }
 }
@@ -528,8 +536,17 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
   cursor: pointer;
   outline: dashed 2px #C8A96A;
 }
+.contenu_try_your_special_offer .cards .text_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contenu_try_your_special_offer .cards .text_cards h3 {
+  font-weight: normal;
+}
 .contenu_try_your_special_offer .cards .prix {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: #C8A96A;
 }
 
 @media only screen and (max-width: 1300px) {
