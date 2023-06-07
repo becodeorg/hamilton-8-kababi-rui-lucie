@@ -10,3 +10,12 @@ Consolidation project englobing HTML, CSS and SASS fundations learned through th
 - Usage of modern positioning techniques (grid or flexbox and even absolute).
 - Create a "pixel-perfect" integration from a given wireframe.
 - Learn to read and create a Readme.
+
+### Given Example:
+
+This was the given mockup that we had to recreate and build our project.
+![project](./img/design.jpg)
+
+### Live preview:
+
+If you click on [this link](https://becodeorg.github.io/hamilton-8-kababi-rui-lucie/) it will allow you to see how my final projects looks like.
