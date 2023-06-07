@@ -7,7 +7,6 @@ header {
                   linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
       height: 100%;
       width: 100%;
-  
     }
     .nav_links,
     .nav_links2 {
@@ -180,9 +179,13 @@ header {
     }
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width:450px){
   header {
     .topnav {
+      .Kababi_logo {
+        left: 20px;
+        top: 20px;
+      }
       .topnav_menu {
         display: none;
       }
@@ -190,16 +193,38 @@ header {
     .contenu_header {
       .imgAndtitle {
         width: 300px;
-        img {
-          width: 110px;
-          top: -30px;
-        }
         margin-top: 40%;
+        img {
+          width: 100px;
+          top: -30px;
+          right: 30px;
+        }
         h1 {
-          font-size: 90px;
+          font-size: 80px;
           line-height: 100px;
         }
       }
     }
   }
-}
+  }
+
+  @media only screen and (max-width:300px){
+    header {
+      height: 100vh;
+      .contenu_header {
+        .imgAndtitle {
+          width: 200px;
+          margin-top: 30%;
+          img {
+            width: 80px;
+            top: -20px;
+            right: -20px
+          }
+          h1 {
+            font-size: 78px;
+            line-height: 80px;
+          }
+        }
+      }
+    }
+    }
