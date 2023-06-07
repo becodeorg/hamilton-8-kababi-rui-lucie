@@ -1,6 +1,6 @@
 # Challenge: Kabibi food
 
-Consolidation project englobing HTML, CSS and SASS fundations learned through the past two weeks.
+Consolidation project concerning the HTML, CSS and SASS fundations learned through the past two weeks.
 
 ## Objectives of this project:
 
@@ -20,7 +20,7 @@ This was the given mockup that we had to recreate and build our project.
 
 If you click on [this link](https://becodeorg.github.io/hamilton-8-kababi-rui-lucie/) it will allow you to see how our final project looks like.
 
-### contributors:
+### Contributors:
 
 This project was made by:
 
