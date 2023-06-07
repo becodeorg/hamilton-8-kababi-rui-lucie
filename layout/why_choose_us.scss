@@ -1,110 +1,108 @@
-main{
-    .why_choose_us{
-        width: 100%;
-        position: relative;
-        .circle_food{
-            position: absolute;
-            left: 50%;
-            transform: translateY(-20%) translateX(-50%);
-            top: 0%;
-            border-radius: 50%;
-            border: solid 30px $white;
-            width: 40vw;
-        }
-        .images_top_choose_us {
-          width: 100%;
-          min-height: 300px;
-          position: relative;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 10% 7% 0 10%;
-            img{       
-                z-index: 1;
-            }
-        } 
+main {
+  .why_choose_us {
+    width: 100%;
+
+    position: relative;
+    .circle_food {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateY(-20%) translateX(-50%);
+      border-radius: 50%;
+      border: solid 30px $white;
+      width: 40vw;
     }
-    .about_us{
-        position: relative;
+    .images_top_choose_us {
+      width: 100%;
+      min-height: 300px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10% 7% 0 10%;
+      img {
+        z-index: 1;
+      }
+    }
+  }
+  .about_us {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    padding: 13% 0 0% 0%;
+    margin-bottom: 4rem;
+    .title_about_us {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 100;
+        letter-spacing: -2px;
+      }
+      p {
+        padding-top: 20px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+      }
+    }
+    .icon_about_absolute {
+      position: absolute;
+      width: 10vw;
+      top: 20%;
+      right: 20%;
+    }
+    .about_us_absolute {
+      position: absolute;
+      left: 2%;
+      top: 10%;
+      font-size: 10vw;
+      color: $mediumcreme;
+      z-index: -1;
+      text-transform: uppercase;
+    }
+    .contenu_about_us {
+      width: 45%;
+      display: flex;
+      img {
+        display: block;
+        max-height: 600px;
+        max-width: 60%;
+      }
+      .text_about_us {
+        padding: 5%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 6rem;
-        padding: 13% 0 0% 0%;
-        margin-bottom: 4rem;
-        .title_about_us{
-            width: 100%;
-            text-align: center;
-            position: relative;
-            h2{
-                text-transform: uppercase;
-                font-size: 3rem;
-                font-weight: 100;
-                letter-spacing: -2px;
-            }
-            p{
-                padding-top: 20px;
-                font-family: "Kanit", sans-serif;
-                font-weight: 400;
-            }
-            .icon_about_absolute{
-                position: absolute;
-                width: 10vw;
-                top:20%;
-                right: 20%;
-            }
+        align-items: start;
+        text-align: justify;
+        p {
+          font-size: 1.5rem;
+          line-height: 3rem;
+          margin-bottom: 60px;
         }
-        .about_us_absolute{
-            position: absolute;
-            left: 2%;
-            top: 10%;
-            font-size: 10vw;
-            color: $mediumcreme;
-            z-index: -1;
-            text-transform: uppercase;
-        }
-        .contenu_about_us{
-          width: 45%;
-          display: flex;
-          img {
-            display: block;
-            max-height: 600px;
-            max-width: 60%;
+        .btn_about_us {
+          font-size: 1.2rem;
+          word-spacing: 0.3rem;
+          background-color: $or;
+          padding: 20px 30px;
+          border: none;
+          border-radius: 5px;
+          font-weight: 500;
+          color: $white;
+          font-weight: 600;
+          &:hover {
+            cursor: pointer;
+            background-color: #dbb975;
+            color: $white;
           }
-          .text_about_us {
-            padding: 5%;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            text-align: justify;
-            p {
-                font-size: 1.5rem;
-                margin-bottom: 60px;
-                line-height: 3rem;
-              }
-              .btn_about_us {
-                font-size: 1.2rem;
-                word-spacing: 0.3rem;
-                background-color: $or;
-                padding: 20px 30px;
-                border: none;
-                border-radius: 5px;
-                font-weight: 500;
-                color: $white;
-                font-weight: 600;
-                &:hover {
-                  cursor: pointer;
-                  background-color: #dbb975;
-                  color: $white;
-                }
-                    i{
-                        padding-left: 10px;
-                    }
-                  }
-            }
-
+          i {
+            padding-left: 10px;
+          }
         }
-
+      }
     }
   }
 }
