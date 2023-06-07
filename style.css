@@ -775,6 +775,18 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
     width: 3.5rem;
   }
 }
+@media only screen and (max-width: 450px) {
+  .latest-news-title {
+    gap: 0;
+    margin: 3rem 0 2rem 0;
+  }
+  .latest-news-title h2 {
+    font-size: 2.5rem;
+  }
+  .latest-news-title p {
+    font-size: 1.5rem;
+  }
+}
 .meet-chefs {
   position: relative;
   width: 100%;
@@ -844,6 +856,17 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
   }
   .chef-img {
     width: 40%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .chefs-container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    row-gap: 0;
+    gap: 2rem;
+  }
+  .chef-img {
+    width: 95%;
   }
 }
 .restaurant-photos-container {
