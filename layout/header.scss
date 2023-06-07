@@ -1,119 +1,128 @@
 header {
-    height: 120vh;
-    background: url(img/slider/img_bg_slider_home01.jpg) no-repeat;
-    background-size: cover ;
-    .container_header {
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-                  linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-      height: 100%;
-      width: 100%;
+  height: 120vh;
+  background: url(img/slider/img_bg_slider_home01.jpg) no-repeat;
+  background-size: cover;
+  .container_header {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    height: 100%;
+    width: 100%;
+  }
+  .nav_links,
+  .nav_links2 {
+    @include displayCenterRowNoJustify;
+  }
+  .topnav {
+    width: 100%;
+    @include displayCenterRowNoJustify;
+    justify-content: end;
+    padding: 40px 80px;
+    .Kababi_logo {
+      position: absolute;
+      left: 60px;
+      top: 40px;
     }
-    .nav_links,
-    .nav_links2 {
-      @include displayCenterRowNoJustify;
-    }
-    .topnav {
-      width: 100%;
-      @include displayCenterRowNoJustify;
-      justify-content: end;
-      padding: 40px 80px;
-      .Kababi_logo {
-        position: absolute;
-        left: 60px;
-        top: 40px;
-      }
-      .topnav_menu {
-        width: 80%;
-        @include displayCenterBetween;
-        padding: 15px 0;
-        .nav_links,
-        .nav_links2 {
-          gap: 60px;
-          .home {
+    .topnav_menu {
+      width: 80%;
+      @include displayCenterBetween;
+      padding: 15px 0;
+      .nav_links,
+      .nav_links2 {
+        gap: 60px;
+        .home {
+          color: $or;
+        }
+        li a {
+          color: $white;
+          font-family: "Kanit", sans-serif;
+          &:hover {
             color: $or;
           }
-          li a {
-            color: $white;
-            font-family: 'Kanit', sans-serif;
-            &:hover{
-              color: $or;
-            }
-            i {
-              margin: 0 10px;
-            }
-          }
-          li img {
-            margin-right: 10px;
-          }
-          li .btn_nav {
-            background-color: $or;
-            padding: 20px 30px;
-            border-radius: 5px;
-            font-weight: 600;
-            font-size: 13px ;
-            &:hover{
-              background-color: $white;
-              color: $or;
-            }
-            i{
-              margin: 0 0 0 10px;
-            }
+          i {
+            margin: 0 10px;
           }
         }
-      }
-      .icon_hamburger {
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        z-index: 100;
-        display: none;
+        li img {
+          margin-right: 10px;
+        }
+        li .btn_nav {
+          background-color: $or;
+          padding: 20px 30px;
+          border-radius: 5px;
+          font-weight: 600;
+          font-size: 13px;
+          &:hover {
+            background-color: $white;
+            color: $or;
+          }
+          i {
+            margin: 0 0 0 10px;
+          }
+        }
       }
     }
-    .contenu_header {
-      max-width: 100%;
-      margin: 5% 10%;
-      .imgAndtitle {
-        position: relative;
-        width: 500px;
-        img {
-          position: absolute;
-          top: -50px;
-          right: 0;
-        }
-        h1 {
-          color: white;
-          font-size: 160px;
-          line-height: 145px;
-          font-weight: 300;
-          width: 300px;
-          letter-spacing: -9px;
-          margin-bottom: 50px;
-        }
+    .icon_hamburger {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      z-index: 100;
+      display: none;
+    }
+  }
+  .contenu_header {
+    max-width: 100%;
+    margin: 5% 10%;
+    .imgAndtitle {
+      position: relative;
+      width: 500px;
+      img {
+        position: absolute;
+        top: -50px;
+        right: 0;
       }
-      a {
-        @include displayCenterRow;
-        font-family: 'Kanit', sans-serif;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 11px;
-        width: 210px;
-        height: 45px;
+      h1 {
         color: white;
-        border: solid 2px rgba(255, 255, 255, 0.185);
-        border-radius: 5px;
-        &:hover{
-          background-color: white;
-          color: black;
-          scale: 1.1;
-        }
-        i{
-          font-weight: 600;
-          padding-left: 10px
-        }
+        font-size: 160px;
+        line-height: 145px;
+        font-weight: 300;
+        width: 300px;
+        letter-spacing: -9px;
+        margin-bottom: 50px;
+      }
+    }
+    a {
+      @include displayCenterRow;
+      font-family: "Kanit", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 11px;
+      width: 210px;
+      height: 45px;
+      color: white;
+      border: solid 2px rgba(255, 255, 255, 0.185);
+      border-radius: 5px;
+      &:hover {
+        background-color: white;
+        color: black;
+        scale: 1.1;
+      }
+      i {
+        font-weight: 600;
+        padding-left: 10px;
       }
     }
   }
+}
 
+@media only screen and (min-width: 1501px) {
+  header {
+    .topnav {
+      .topnav_menu {
+        @include fixDisplayNav(flex !important);
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 1500px) {
   header {
@@ -179,7 +188,7 @@ header {
     }
   }
 }
-@media only screen and (max-width:450px){
+@media only screen and (max-width: 450px) {
   header {
     .topnav {
       .Kababi_logo {
@@ -206,25 +215,25 @@ header {
       }
     }
   }
-  }
+}
 
-  @media only screen and (max-width:300px){
-    header {
-      height: 100vh;
-      .contenu_header {
-        .imgAndtitle {
-          width: 200px;
-          margin-top: 30%;
-          img {
-            width: 80px;
-            top: -20px;
-            right: -20px
-          }
-          h1 {
-            font-size: 78px;
-            line-height: 80px;
-          }
+@media only screen and (max-width: 300px) {
+  header {
+    height: 100vh;
+    .contenu_header {
+      .imgAndtitle {
+        width: 200px;
+        margin-top: 30%;
+        img {
+          width: 80px;
+          top: -20px;
+          right: -20px;
+        }
+        h1 {
+          font-size: 78px;
+          line-height: 80px;
         }
       }
     }
-    }
+  }
+}

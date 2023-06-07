@@ -85,7 +85,7 @@ main {
           margin-bottom: 60px;
         }
         .btn_about_us {
-          font-family: 'Kanit', sans-serif;
+          font-family: "Kanit", sans-serif;
           font-size: 1.1rem;
           word-spacing: 0.3rem;
           font-weight: 500;
@@ -174,16 +174,16 @@ main {
         align-items: center;
         .text_about_us {
           align-items: center;
+        }
       }
     }
-  }
   }
 }
 
 @media only screen and (max-width: 700px) {
   main {
     .why_choose_us {
-      .circle_food{
+      .circle_food {
         top: -20px;
         height: 300px;
         width: 300px;
@@ -196,9 +196,9 @@ main {
         justify-content: end;
         align-items: center;
         padding: 10% 0 0 0;
-          img{
-            width: 200px;
-          }
+        img {
+          width: 200px;
+        }
       }
     }
     .about_us {
@@ -209,7 +209,7 @@ main {
         h2 {
           font-size: 2.5rem;
         }
-        p{
+        p {
           font-size: 1.2rem;
         }
       }
@@ -226,6 +226,17 @@ main {
             margin-bottom: 50px;
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  main {
+    .why_choose_us {
+      .images_top_choose_us {
+        display: flex;
+        flex-direction: column;
       }
     }
   }
