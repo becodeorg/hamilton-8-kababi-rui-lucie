@@ -1,6 +1,7 @@
 header {
   height: 100vh;
   background: url(img/slider/img_bg_slider_home01.jpg) no-repeat;
+  background-size: cover;
 }
 header .container_header {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
@@ -81,7 +82,7 @@ header .topnav .icon_hamburger {
   display: none;
 }
 header .contenu_header {
-  width: 100%;
+  max-width: 100%;
   margin: 5% 10%;
 }
 header .contenu_header .imgAndtitle {
@@ -143,25 +144,27 @@ header .contenu_header a i {
   }
   header .topnav .topnav_menu {
     height: 100vh;
+    width: 100vw;
     padding: 10%;
-    backdrop-filter: blur(15px);
-    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.719);
+    backdrop-filter: blur(7px);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: absolute;
+    z-index: 99;
     top: 0;
     right: 0;
-    transform-origin: 0% 0%;
-    transform: translate(200%, 0%);
-    transition: transform 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transform: translateX(100%);
+    transition: transform 0.8s;
   }
   header .topnav .topnav_menu.active {
     transform: none;
+    display: block;
     position: fixed;
-    transition: transform 0.5 ease;
-    width: 100%;
+    left: 0;
+    width: 100vw;
   }
   header .contenu_header .imgAndtitle {
     margin-top: 15%;
@@ -169,7 +172,7 @@ header .contenu_header a i {
 }
 @media only screen and (max-width: 750px) {
   header .contenu_header {
-    margin-top: 25%;
+    margin-top: 15%;
   }
   header .contenu_header .imgAndtitle {
     width: 400px;
@@ -183,6 +186,9 @@ header .contenu_header a i {
   }
 }
 @media only screen and (max-width: 450px) {
+  header .topnav .topnav_menu {
+    display: none;
+  }
   header .contenu_header .imgAndtitle {
     width: 300px;
     margin-top: 40%;
@@ -214,10 +220,9 @@ header .contenu_header a i {
 }
 .bg_color .choose_your_best_category .category_absolute {
   position: absolute;
-  left: 10px;
-  top: 20px;
-  font-size: 320px;
-  letter-spacing: -35px;
+  left: 2%;
+  top: 0;
+  font-size: 10vw;
   color: #F5EEE3;
 }
 .bg_color .choose_your_best_category .title_choose_your_category {
@@ -252,7 +257,8 @@ header .contenu_header a i {
 .bg_color .choose_your_best_category .cards .card:hover {
   background-color: #C8A96A;
 }
-.bg_color .choose_your_best_category .cards .card:hover p, .bg_color .choose_your_best_category .cards .card:hover i {
+.bg_color .choose_your_best_category .cards .card:hover p,
+.bg_color .choose_your_best_category .cards .card:hover i {
   color: #FFFFFF;
 }
 .bg_color .choose_your_best_category .cards .card:hover .icon_choose_category {
@@ -270,9 +276,12 @@ header .contenu_header a i {
 @media only screen and (max-width: 1400px) {
   main .bg_color .choose_your_best_category .title_choose_your_category {
     padding: 100px 20px 0 20px;
+<<<<<<< HEAD
   }
   main .bg_color .choose_your_best_category .category_absolute {
     font-size: 200px;
+=======
+>>>>>>> 8ca0529881cae30cda6f7bcdc4d711623be7ccc7
   }
 }
 @media only screen and (max-width: 450px) {
@@ -282,9 +291,12 @@ header .contenu_header a i {
   main .bg_color .choose_your_best_category .title_choose_your_category h2 {
     font-size: 40px;
   }
+<<<<<<< HEAD
   main .bg_color .choose_your_best_category .category_absolute {
     font-size: 200px;
   }
+=======
+>>>>>>> 8ca0529881cae30cda6f7bcdc4d711623be7ccc7
   main .bg_color .cards {
     display: flex;
     align-items: center;
@@ -293,7 +305,6 @@ header .contenu_header a i {
 }
 main .why_choose_us {
   width: 100%;
-  min-height: 200vh;
   position: relative;
 }
 main .why_choose_us .circle_food {
@@ -319,11 +330,12 @@ main .why_choose_us .images_top_choose_us img {
 }
 main .about_us {
   position: relative;
-  z-index: -2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 6rem;
   padding: 13% 0 0% 0%;
+  margin-bottom: 4rem;
 }
 main .about_us .title_about_us {
   width: 100%;
@@ -341,39 +353,61 @@ main .about_us .title_about_us p {
   font-family: "Kanit", sans-serif;
   font-weight: 400;
 }
-main .about_us .title_about_us .icon_about_absolute {
+main .about_us .icon_about_absolute {
   position: absolute;
-  top: 0;
-  right: 10%;
+  width: 10vw;
+  top: 20%;
+  right: 20%;
 }
 main .about_us .about_us_absolute {
   position: absolute;
-  left: 10px;
-  top: 150px;
-  font-size: 13rem;
-  letter-spacing: -7px;
+  left: 2%;
+  top: 10%;
+  font-size: 10vw;
   color: #F5EEE3;
   z-index: -1;
   text-transform: uppercase;
 }
 main .about_us .contenu_about_us {
-  margin: 7% 22%;
+  width: 45%;
   display: flex;
 }
+main .about_us .contenu_about_us img {
+  display: block;
+  max-height: 600px;
+  max-width: 60%;
+}
 main .about_us .contenu_about_us .text_about_us {
-  padding: 7%;
-  line-height: 50px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: justify;
 }
 main .about_us .contenu_about_us .text_about_us p {
   font-size: 1.5rem;
+  line-height: 3rem;
   margin-bottom: 60px;
 }
 main .about_us .contenu_about_us .text_about_us .btn_about_us {
+  font-size: 1.2rem;
+  word-spacing: 0.3rem;
   background-color: #C8A96A;
   padding: 20px 30px;
+  border: none;
   border-radius: 5px;
+<<<<<<< HEAD
   font-family: "brands";
   font-weight: 500;
+=======
+  font-weight: 500;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+main .about_us .contenu_about_us .text_about_us .btn_about_us:hover {
+  cursor: pointer;
+  background-color: #dbb975;
+>>>>>>> 8ca0529881cae30cda6f7bcdc4d711623be7ccc7
   color: #FFFFFF;
   font-family: "Kanit", sans-serif;
 }
@@ -381,6 +415,17 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
   padding-left: 10px;
 }
 
+<<<<<<< HEAD
+@media only screen and (max-width: 1500px) {
+  .why_choose_us .images_top_choose_us img {
+    width: 230px;
+=======
+@media only screen and (max-width: 1760px) {
+  main .about_us .contenu_about_us {
+    width: 80%;
+    display: flex;
+  }
+}
 @media only screen and (max-width: 1500px) {
   .why_choose_us .images_top_choose_us img {
     width: 230px;
@@ -392,8 +437,31 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
     font-size: 2rem;
     margin-top: 100px;
   }
+  .icon_about_absolute {
+    top: 0;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .why_choose_us .images_top_choose_us img {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .why_choose_us .images_top_choose_us img {
+    width: 180px;
+>>>>>>> 8ca0529881cae30cda6f7bcdc4d711623be7ccc7
+  }
+  .why_choose_us .about_us .about_us_absolute {
+    font-size: 7rem;
+  }
+  .why_choose_us .about_us .title_about_us h2 {
+    font-size: 2rem;
+    margin-top: 100px;
+  }
   .why_choose_us .about_us .title_about_us .icon_about_absolute {
     top: 0;
+<<<<<<< HEAD
     left: 50%;
     transform: translateX(-50%);
     width: 100px;
@@ -423,12 +491,20 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
     left: 50%;
     transform: translateX(-50%);
     width: 100px;
+=======
+    right: 0;
+>>>>>>> 8ca0529881cae30cda6f7bcdc4d711623be7ccc7
   }
   .why_choose_us .about_us .contenu_about_us {
-    margin: 15% 5%;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
+<<<<<<< HEAD
+=======
+  main .about_us .contenu_about_us .text_about_us {
+    align-items: center;
+  }
+>>>>>>> 8ca0529881cae30cda6f7bcdc4d711623be7ccc7
 }
 @media only screen and (max-width: 700px) {
   .why_choose_us .images_top_choose_us img {
@@ -475,14 +551,15 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
 
 .our_menu_absolute {
   top: 0;
-  left: 0;
-  word-spacing: 2rem;
-  font-size: 13rem;
+  left: 3%;
+  font-size: 10vw;
+  letter-spacing: 1rem;
+  z-index: 1;
   color: #F5EEE3;
 }
 
 .title_special_offer {
-  z-index: 1;
+  z-index: 2;
   text-align: center;
 }
 .title_special_offer h2 {
@@ -515,8 +592,17 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
   cursor: pointer;
   outline: dashed 2px #C8A96A;
 }
+.contenu_try_your_special_offer .cards .text_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contenu_try_your_special_offer .cards .text_cards h3 {
+  font-weight: normal;
+}
 .contenu_try_your_special_offer .cards .prix {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: #C8A96A;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -525,6 +611,14 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
     display: none;
   }
 }
+<<<<<<< HEAD
+=======
+@media only screen and (max-width: 850px) {
+  .try_your_special_offer .contenu_try_your_special_offer .cards {
+    width: 90%;
+  }
+}
+>>>>>>> 8ca0529881cae30cda6f7bcdc4d711623be7ccc7
 .latest-news {
   position: relative;
   width: 100%;
