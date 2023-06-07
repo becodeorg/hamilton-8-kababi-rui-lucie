@@ -394,6 +394,7 @@ main .about_us .contenu_about_us .text_about_us {
   flex-direction: column;
   align-items: start;
   text-align: justify;
+  text-align: center;
 }
 main .about_us .contenu_about_us .text_about_us p {
   font-size: 1.5rem;
@@ -401,15 +402,15 @@ main .about_us .contenu_about_us .text_about_us p {
   margin-bottom: 60px;
 }
 main .about_us .contenu_about_us .text_about_us .btn_about_us {
-  font-size: 1.2rem;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.1rem;
   word-spacing: 0.3rem;
+  font-weight: 500;
+  color: #FFFFFF;
   background-color: #C8A96A;
   padding: 20px 30px;
   border: none;
   border-radius: 5px;
-  font-weight: 500;
-  color: #FFFFFF;
-  font-weight: 600;
 }
 main .about_us .contenu_about_us .text_about_us .btn_about_us:hover {
   cursor: pointer;
@@ -455,7 +456,7 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
     font-size: 7rem;
   }
   .why_choose_us .about_us .title_about_us h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 100px;
   }
   .why_choose_us .about_us .title_about_us .icon_about_absolute {
@@ -466,18 +467,48 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
     flex-direction: column;
     align-items: center;
   }
-  main .about_us .contenu_about_us .text_about_us {
+  .why_choose_us .about_us .contenu_about_us .text_about_us {
     align-items: center;
   }
 }
 @media only screen and (max-width: 700px) {
-  .why_choose_us .images_top_choose_us img {
-    width: 150px;
+  main .why_choose_us .circle_food {
+    top: -20px;
+    height: 300px;
+    width: 300px;
   }
-}
-@media only screen and (max-width: 500px) {
-  .why_choose_us .images_top_choose_us img {
-    width: 100px;
+  main .why_choose_us .images_top_choose_us {
+    height: 550px;
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10% 0 0 0;
+  }
+  main .why_choose_us .images_top_choose_us img {
+    width: 200px;
+  }
+  main .about_us {
+    gap: 6rem;
+    padding: 5% 0 0% 0%;
+    margin-bottom: 3rem;
+  }
+  main .about_us .title_about_us h2 {
+    font-size: 2.5rem;
+  }
+  main .about_us .title_about_us p {
+    font-size: 1.2rem;
+  }
+  main .about_us .icon_about_absolute {
+    width: 15vw;
+    right: 10%;
+  }
+  main .about_us .about_us_absolute {
+    font-size: 5vw;
+  }
+  main .about_us .contenu_about_us .text_about_us p {
+    margin-bottom: 50px;
   }
 }
 .try_your_special_offer {

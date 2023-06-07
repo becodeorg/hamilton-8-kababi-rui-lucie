@@ -78,21 +78,22 @@ main {
         flex-direction: column;
         align-items: start;
         text-align: justify;
+        text-align: center;
         p {
           font-size: 1.5rem;
           line-height: 3rem;
           margin-bottom: 60px;
         }
         .btn_about_us {
-          font-size: 1.2rem;
+          font-family: 'Kanit', sans-serif;
+          font-size: 1.1rem;
           word-spacing: 0.3rem;
+          font-weight: 500;
+          color: $white;
           background-color: $or;
           padding: 20px 30px;
           border: none;
           border-radius: 5px;
-          font-weight: 500;
-          color: $white;
-          font-weight: 600;
           &:hover {
             cursor: pointer;
             background-color: #dbb975;
@@ -160,7 +161,7 @@ main {
       }
       .title_about_us {
         h2 {
-          font-size: 2rem;
+          font-size: 3rem;
           margin-top: 100px;
         }
         .icon_about_absolute {
@@ -171,35 +172,62 @@ main {
       .contenu_about_us {
         flex-direction: column;
         align-items: center;
+        .text_about_us {
+          align-items: center;
       }
     }
   }
+  }
+}
+
+@media only screen and (max-width: 700px) {
   main {
+    .why_choose_us {
+      .circle_food{
+        top: -20px;
+        height: 300px;
+        width: 300px;
+      }
+      .images_top_choose_us {
+        height: 550px;
+        gap: 20px;
+        flex-direction: column;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 10% 0 0 0;
+          img{
+            width: 200px;
+          }
+      }
+    }
     .about_us {
+      gap: 6rem;
+      padding: 5% 0 0% 0%;
+      margin-bottom: 3rem;
+      .title_about_us {
+        h2 {
+          font-size: 2.5rem;
+        }
+        p{
+          font-size: 1.2rem;
+        }
+      }
+      .icon_about_absolute {
+        width: 15vw;
+        right: 10%;
+      }
+      .about_us_absolute {
+        font-size: 5vw;
+      }
       .contenu_about_us {
         .text_about_us {
-          align-items: center;
+          p {
+            margin-bottom: 50px;
+          }
         }
       }
     }
   }
 }
-
-@media only screen and (max-width: 700px) {
-  .why_choose_us {
-    .images_top_choose_us {
-      img {
-        width: 150px;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 500px) {
-  .why_choose_us {
-    .images_top_choose_us {
-      img {
-        width: 100px;
-      }
-    }
-  }
-}
+  
