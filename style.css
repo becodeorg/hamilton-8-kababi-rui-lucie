@@ -230,13 +230,12 @@ header .contenu_header a i {
   padding: 100px 20px 0 20px;
 }
 .bg_color .choose_your_best_category .title_choose_your_category h2 {
-  font-size: 60px;
+  margin-bottom: 20px;
+  font-size: 3.5rem;
   font-weight: 100;
-  letter-spacing: -2px;
 }
 .bg_color .choose_your_best_category .title_choose_your_category p {
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
+  font-size: 2rem;
 }
 .bg_color .choose_your_best_category .cards {
   display: flex;
@@ -279,12 +278,6 @@ header .contenu_header a i {
   }
 }
 @media only screen and (max-width: 450px) {
-  main .bg_color .choose_your_best_category .title_choose_your_category {
-    padding: 100px 30px 0px 30px;
-  }
-  main .bg_color .choose_your_best_category .title_choose_your_category h2 {
-    font-size: 40px;
-  }
   main .bg_color .cards {
     display: flex;
     align-items: center;
@@ -407,9 +400,6 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
   .why_choose_us .images_top_choose_us img {
     width: 230px;
   }
-  .why_choose_us .about_us .about_us_absolute {
-    font-size: 7rem;
-  }
   .why_choose_us .about_us .title_about_us h2 {
     font-size: 2rem;
     margin-top: 100px;
@@ -428,12 +418,13 @@ main .about_us .contenu_about_us .text_about_us .btn_about_us i {
   .why_choose_us .images_top_choose_us img {
     width: 180px;
   }
-  .why_choose_us .about_us .about_us_absolute {
-    font-size: 7rem;
-  }
   .why_choose_us .about_us .title_about_us h2 {
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+    font-weight: 100;
+  }
+  .why_choose_us .about_us .title_about_us p {
     font-size: 2rem;
-    margin-top: 100px;
   }
   .why_choose_us .about_us .title_about_us .icon_about_absolute {
     top: 0;

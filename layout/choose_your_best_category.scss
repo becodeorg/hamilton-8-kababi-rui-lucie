@@ -20,13 +20,12 @@
       z-index: 1;
       padding: 100px 20px 0 20px;
       h2 {
-        font-size: 60px;
+        margin-bottom: 20px;
+        font-size: 3.5rem;
         font-weight: 100;
-        letter-spacing: -2px;
       }
       p {
-        font-family: "Kanit", sans-serif;
-        font-weight: 400;
+        font-size: 2rem;
       }
     }
 
@@ -80,14 +79,6 @@
 @media only screen and (max-width: 450px) {
   main {
     .bg_color {
-      .choose_your_best_category {
-        .title_choose_your_category {
-          padding: 100px 30px 0px 30px;
-          h2 {
-            font-size: 40px;
-          }
-        }
-      }
       .cards {
         @include displayCenterColumnNoJustify;
       }

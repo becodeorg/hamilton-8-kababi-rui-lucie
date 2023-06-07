@@ -121,9 +121,6 @@ main {
       }
     }
     .about_us {
-      .about_us_absolute {
-        font-size: 7rem;
-      }
       .title_about_us {
         h2 {
           font-size: 2rem;
@@ -155,13 +152,14 @@ main {
       }
     }
     .about_us {
-      .about_us_absolute {
-        font-size: 7rem;
-      }
       .title_about_us {
         h2 {
+          margin-bottom: 20px;
+          font-size: 3.5rem;
+          font-weight: 100;
+        }
+        p {
           font-size: 2rem;
-          margin-top: 100px;
         }
         .icon_about_absolute {
           top: 0;
